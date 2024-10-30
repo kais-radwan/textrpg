@@ -21,8 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background text-foreground",
-          inter.className
+          "bg-background text-foreground font-minecraft",
         )}
       >
         <Providers>{children}</Providers>

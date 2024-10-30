@@ -29,6 +29,7 @@ const config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
+  important: true,
   theme: {
     container: {
       center: true,
