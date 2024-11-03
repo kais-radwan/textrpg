@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Providers from "@/components/providers";
 import { Toaster } from "@/components/ui/sonner"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Merriweather({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Starter Kit",
@@ -21,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background text-foreground font-minecraft",
+          "bg-background text-foreground",
+          inter.className
         )}
       >
         <Providers>{children}</Providers>
