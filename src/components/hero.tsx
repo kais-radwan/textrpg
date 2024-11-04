@@ -79,7 +79,6 @@ export function Hero() {
       />
 
       <AudioPlayer src="/waterfall-24060.mp3" />
-      {/* <Clouds />*/}
       {/* <Clouds rotate />
       <Particles /> */}
 
